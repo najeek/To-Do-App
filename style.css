@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #0575e6, #021b79);
+    font-family: 'Nunito', sans-serif;
+}
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+.heading {
+    color: #fff;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    background: #fff;
+    margin: 0 auto;
+    height: 80px;
+    border: 0 solid;
+    border-radius: 5px;
+
+}
+.container input {
+    height: 20px;
+    width: 80%;
+    padding: 5px 10px;
+    font-size: 20px;
+    border: 1px solid #4caf50;
+    border-radius: 5px;
+
+}
+::placeholder {
+    color: #0575e6;
+}
+.container input:focus {
+    outline: none;
+
+}
+.plus-icon {
+    display: flex;
+    font-size: 50px;
+    color: #4caf50;
+    align-items: center;
+    transition: color 0.5s;
+}
+.plus-icon:hover {
+    cursor: pointer;
+    color: #006400;
+
+}
+.container-task {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 5px auto;
+    background: #fff;
+    border-radius: 5px;
+}
+.container-task .content {
+    width: 90%;
+    font-size: 25px;
+    border-left: 1px solid #4caf50;
+    border-right: 1px solid #4caf50;
+    margin: 0;
+    padding: 20px;
+}
+.container-task .content:hover {
+    cursor: pointer;
+}
+.check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 100%;
+    font-size: 30px;
+    color: #2a2c2a ;
+    transition: color 0.5s;
+}
+.check:hover {
+    cursor: pointer;
+    color:#4caf50;
+}
+.delete:hover {
+    cursor: pointer;
+    color:#a10904;
+}
+.active {
+    color: #4caf50;
+}
+.done {
+    text-decoration: line-through;
+    color: rgb(77, 69, 69);
+}
+@media only screen and (max-width: 1024px) {
+    .container, .container-task {
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .container, .container-task {
+        width: 100%;
+    }
+
+}
+@media only screen and (max-width: 425px) {
+    .container input{
+        width: 70%;
+    }
+    .check {
+        font-size: 20px;
+    }
+    .container-task .content {
+        font-size: 20px;
+    }
+    .plus-icon {
+        font-size: 40px;
+    }
+}
